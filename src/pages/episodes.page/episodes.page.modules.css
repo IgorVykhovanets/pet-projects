@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.episodes-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 10px 75px;
+}
+.pagination-episode-block{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 20px 30px 30px 0;
+}
+.pagination-button-block > button{
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: 1s;
+}
+.pagination-button-block > button:hover{
+    transition: 1s;
+    color: white;
+    background: rgba(0, 0, 0, 0.56);
+}
+.block-page {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    animation: page-block 3s 1;
+    background: rgba(255, 255, 255, 0.88);
+    width: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+@keyframes page-block {
+    50%{
+        color: white;
+    }
+}

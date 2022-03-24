@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.episode-name-block{
+    font-family: 'Oswald', sans-serif;
+    animation: episode-name-block 3s 1;
+}
+@keyframes episode-name-block {
+    0%{
+        margin-bottom: 100%;
+    }
+}

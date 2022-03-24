@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.detail-character-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.17);
+    margin: 50px 100px 50px 100px;
+    padding: 50px 0;
+    border: 0.5px solid rgba(255, 255, 255, 0.49);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 10px;
+}
+.character-title-block {
+    display: flex;
+    margin: 0 50px;
+}
+.character-title-block > img{
+    height: 300px;
+    border-radius: 10%;
+    margin-right: 100px;
+    animation: img-character-block 3s 1;
+}
+.title-name-character > h2{
+    margin: 50px 100px 20px 0;
+    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    animation: character-title-name 5s 1;
+}
+.title-name-character > div{
+    color: white;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    margin-left: 2px;
+    animation: character-description-block  5s 1;
+}
+@keyframes character-description-block {
+    0%{
+        color: black;
+        margin-bottom: 100%;
+    }
+}
+@keyframes character-title-name {
+    0%{
+        color: white;
+        margin-top: 100%;
+    }
+}
+@keyframes img-character-block {
+    0%{
+        margin-top: 100%;
+    }
+}
+.episode-character-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.episode-character-block > span {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}

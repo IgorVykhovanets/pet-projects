@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {Routes, Route} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css'
+import HomePage from "./pages/home.page/home.page";
+import EpisodesPage from "./pages/episodes.page/episodes.page";
+import CharactersPage from "./pages/characters.page/characters.page";
+import DetailsEpisodesPage from "./pages/details.episodes.page/details.episodes.page";
+import CharacterDetailsPage from "./pages/character.details.page/character.details.page";
+
+const App = () => {
+    return (
+        <div>
+            <Routes>
+                <Route path={'/'} element={<HomePage/>}>
+                    <Route path={'episodes'} element={<EpisodesPage/>}/>
+                    <Route path={'episodes/:id'} element={<DetailsEpisodesPage/>}/>
+                    <Route path={'characters'} element={<CharactersPage/>}/>
+                    <Route path={'characters/:name'} element={<CharacterDetailsPage/>}/>
+                    <Route path={'episodes/:id/:name'} element={<CharacterDetailsPage/>}/>
+                </Route>
+            </Routes>
+        </div>
+    );
+};
 
 export default App;

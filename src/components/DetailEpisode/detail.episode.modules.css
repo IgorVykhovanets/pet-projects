@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.episode-detail-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-block {
+    border: 1px solid rgba(255, 255, 255, 0.48);
+    margin: 20px 40px 50px 40px;
+    padding: 40px 40px 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+    animation: character-block 3s 1;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 100px;
+}
+@keyframes character-block {
+    0%{
+        padding-top: 100%;
+    }
+}
+.title-episode-detail{
+    text-align: center;
+}
+.title-name-episode > h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 0 15px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.07);
+    font-weight: bold;
+    letter-spacing: 8px;
+    margin-bottom: 5px;
+    font-family: 'Oswald', sans-serif;
+    animation: title-name-episode 2s 1;
+}
+@keyframes title-name-episode {
+    0%{
+        margin-left: 100%;
+        font-size: 0;
+    }
+
+}
+.title-episode-detail > div{
+    letter-spacing: 1px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+}

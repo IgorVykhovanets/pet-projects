@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.title-link > a {
+    font-size: 40px;
+    font-family: 'Antonio', sans-serif;
+    text-decoration: none;
+    transition: 2s;
+    color: rgba(255, 255, 255, 0.23);
+    padding-left: 20px;
+}
+
+.title-link > a.active {
+    font-size: 52px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.89);
+    letter-spacing: 2px;
+    animation: title-text 4s 1;
+}
+
+.title-link > a:hover {
+    font-size: 52px;
+    transition: 2s;
+    color: white;
+}
+
+@keyframes title-text {
+    0%{
+        color: rgb(0, 255, 208);
+    }
+    30%{
+        letter-spacing: 3px;
+        padding-left: 50px;
+    }
+    85%{
+        letter-spacing: 2px;
+    }
+}
+.menu-nav-links{
+    text-align: right;
+}
+.menu-nav-links > div > a {
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'Antonio', sans-serif;
+    transition: 2s;
+    color: rgba(255, 255, 255, 0.44);
+    padding-right: 20px;
+}
+
+.menu-nav-links > div > a:hover {
+    font-size: 36px;
+    color: white;
+    transition: 2s;
+    letter-spacing: 1.5px;
+}
+.menu-nav-links > div > a.active {
+    font-size: 36px;
+    color: white;
+    letter-spacing: 3px;
+    animation: nav-links 3s 1;
+}
+@keyframes nav-links {
+    10%{
+        color: #00ffff;
+    }
+}
+.search-menu{
+    padding-top: 30px;
+    width: 200px;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 2s;
+}
+.search-menu > input{
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    padding-left: 10px;
+}
+.search-menu > input::placeholder{
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Megrim', cursive;
+    color: rgba(255, 255, 255, 0.46);
+}
+.sendButton{
+    width: 50px;
+}
+.search-menu:hover{
+    width: 250px;
+}
